@@ -1,0 +1,150 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+         "I'm Kayla Virtual Assistant Of Royal Bank How Can I  Help You?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {
+      "tag": "loan",
+      "patterns": [
+        "loan",
+        "Do you provide loan?",
+        "what type of loan your bank have?"
+      ],
+      "responses": [
+        "Yes we provides multy loan systems.",
+        "We provide Personal Loans, \n Home Loans, \n Educational Loans, \n Vehical Loans "
+      ]
+    },
+    {
+      "tag": "accounts",
+      "patterns": [
+        "How many types of accounts your bank have?",
+        "What are those two type of accounts?"
+      ],
+      "responses": [
+        "Yes we have two types of accounts",
+        "Personal Type Accounts and Buisness Type accounts"
+      ]
+    },
+    {
+      "tag": "personal",
+      "patterns": [
+        "bank has personal type account?",
+        "open personal account in bank?",
+        "Can i know about personal type accounts?",
+        "Tell me about personal type account?."
+      ],
+      "responses": [
+        "Yes you can open personal type account in our bank",
+        "Yes we provide personal account for our client, we     need simple document from you to open the account",
+        "Minor Accounts, Savings Accounts, Fixed Accounts, Current Accounts and Senior Citizen Accounts"
+      ]
+    },
+    {
+      "tag": "buisness",
+      "patterns": [
+        "Do your bank has buisness account?",
+        "How Can i open buisness account in your bank",
+        "What i need to open buisness type accounts?",
+        "Tell me about personal type accounts."
+      ],
+      "responses": [
+        "Yes we have buisness account",
+        "Yes we provide buisness account for our client, we     need simple document from our client"
+      ]
+    },
+    {
+      "tag": "contact",
+      "patterns": [
+        "contact customer care?",
+        "How to contact customer care?",
+        "contact bank customer care details?",
+        "contact customer care number?"
+      ],
+      "responses": [
+        "Contact No :- 011-637 2982/011-879 617, Email id :- royal_bank@info.com , Head Office :- 112/3 St.Clair Road, Wellawatta.",
+        "Contact No :- 011-637 2982/011-879 617"
+      ]
+    },
+     {
+      "tag": "branches",
+      "patterns": [
+        "Can i know how many branches your bank have?",
+        "Where is your Head Branch Located?",
+        "Can i know your branches located areas?"
+      ],
+      "responses": [
+        "We have 10 Branches.",
+        "Our Head Branch is Located in wellawatta.",
+        "Wellawatta , Moratuwa,  Kalutara, Kandy, Dambulla, \n Trincomalee,  Jaffna, Buttala, Matara and Galle"
+      ]
+    },
+    {
+      "tag": "E-Banking ",
+      "patterns": [
+        "Do your Bank Has E-Banking?",
+        "Can i know about E-Banking?",
+         "Can you explain about E-Banking?"
+      ],
+      "responses": [
+        "Yes We have E-Banking System.",
+        "It's a system you can do your all banking work via online."
+      ]
+    },
+       {
+      "tag": "intrest",
+      "patterns": [
+        "Can i know the intrest rate your bank provide?",
+        "Can i know about intrest ratio in your bank?"
+      ],
+      "responses": [
+        "we give 2.5 % intrest in our bank."
+      ]
+    },
+    {
+      "tag": "debit card",
+      "patterns": [
+        "Can i know about debit card?",
+        "Can you tell about debit card you provide?"
+      ],
+      "responses": [
+        "The Royal Bank Visa and Mastercard Debit Cards are the easiest \n and most convenient way to purchase \n goods and services from any outlet. for further details contact our hot line..."
+      ]
+    },
+     {
+      "tag": "credit card",
+      "patterns": [
+         "Can i know about credit card?",
+       "Can you tell about credit card you provide?"
+      ],
+      "responses": [
+        "Convenience, speed and security. These features have been the  \n benchmarks of Royal Bank Credit cards.for further details contact our hot line..."
+      ]
+    }
+  ]
+}
