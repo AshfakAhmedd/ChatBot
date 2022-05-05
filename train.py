@@ -22,15 +22,15 @@ for intent in intents['intents']:
     tags.append(tag)
     for pattern in intent['patterns']:
         # tokenize each word in the sentence
-        w = tokenize(pattern)
+        word = tokenize(pattern)
         # add to our words list
-        all_words.extend(w)
+        all_words.extend(word)
         # add to xy pair
-        xy.append((w, tag))
+        xy.append((word, tag))
 
 # stem and lower each word
 ignore_words = ['?', '.', '!']
-all_words = [stem(w) for w in all_words if w not in ignore_words]
+all_words = [stem(word) for word in all_words if word not in ignore_words]
 # remove duplicates and sort
 all_words = sorted(set(all_words))
 tags = sorted(set(tags))
