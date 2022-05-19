@@ -22,15 +22,15 @@ for intent in intents['intents']:
     tags.append(tag)
     for pattern in intent['patterns']:
         # tokenize each word in the sentence
-        word = tokenize(pattern)
+        wd = tokenize(pattern)
         # add to our words list
-        all_words.extend(word)
+        all_words.extend(wd)
         # add to xy pair
-        xy.append((word, tag))
+        xy.append((wd, tag))
 
 # stem and lower each word
 ignore_words = ['?', '.', '!']
-all_words = [stem(word) for word in all_words if word not in ignore_words]
+all_words = [stem(wd) for wd in all_words if wd not in ignore_words]
 # remove duplicates and sort
 all_words = sorted(set(all_words))
 tags = sorted(set(tags))
@@ -55,15 +55,15 @@ y_train = np.array(y_train)
 
 # Hyper-parameters
 num_epochs = 1000
-batch_size = 8
-learning_rate = 0.001
+batch_size = 16
+learning_rate = 0.01
 i_size = len(X_train[0])
 h_size = 8
 o_size = len(tags)
 print(i_size, o_size)
 
 
-class BotDataset(SetofData):
+class BotDataset(Dataset):
 
     def __init__(self):
         self.n_samples = len(X_train)
@@ -74,13 +74,13 @@ class BotDataset(SetofData):
     def __getitem__(self, index):
         return self.x_data[index], self.y_data[index]
 
-    # we can call len(SetofData) to return the size
+    # we can call len(Dataset) to return the size
     def __len__(self):
         return self.n_samples
 
 
 dataset = BotDataset()
-train_loader = DataLoader(SetofData=dataset,
+train_loader = DataLoader(dataset=dataset,
                           batch_size=batch_size,
                           shuffle=True,
                           num_workers=0)

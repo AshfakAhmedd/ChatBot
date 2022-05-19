@@ -4,11 +4,12 @@
       "tag": "greeting",
       "patterns": [
         "Hi",
-        "Hey",
-        "How are you",
         "Is anyone there?",
-        "Hello",
-        "Good day"
+        "Hey",
+        "Good day",
+        "How are you",
+        "Hello"
+
       ],
       "responses": [
          "I'm Kayla Virtual Assistant Of Royal Bank How Can I  Help You?"
@@ -19,8 +20,9 @@
       "patterns": ["Bye", "See you later", "Goodbye"],
       "responses": [
         "See you later, thanks for visiting",
-        "Have a nice day",
-        "Bye! Come back again soon."
+        "Bye! Come back again soon.",
+        "Have a nice day"
+
       ]
     },
     {
@@ -31,42 +33,68 @@
     {
       "tag": "loan",
       "patterns": [
-        "loan",
+        "loans",
         "Do you provide loan?",
-        "what type of loan your bank have?"
+        "what type of loan your bank have?",
+        "Can i know about loans?",
+        "loan types"
+
       ],
       "responses": [
         "Yes we provides multy loan systems.",
-        "We provide Personal Loans, \n Home Loans, \n Educational Loans, \n Vehical Loans "
+        "We provide\nPersonal loans\nHome loans\nEducational loans\nVehicle loans\nWhich one is more suitable to you?\n"
       ]
     },
     {
-      "tag": "accounts",
+      "tag": "account",
       "patterns": [
         "How many types of accounts your bank have?",
-        "What are those two type of accounts?"
+        "What are those two type of accounts?",
+        "How Can I open an account?",
+        "How to open an account?",
+         "Online account"
       ],
       "responses": [
-        "Yes we have two types of accounts",
-        "Personal Type Accounts and Buisness Type accounts"
+        "We have personal and business accounts. Which account type do you prefer?"
+      ]
+    },
+       {
+      "tag": "educational",
+      "patterns": [
+        "Do you have educational loans?",
+        "Educational loans",
+        "How Can I Get The Educational Loan?"
+      ],
+      "responses": [
+        "You are interseted in Educational loans.\nFor more information, please go to https://rbcbank.com/loans/educational loan\n"
       ]
     },
     {
       "tag": "personal",
       "patterns": [
         "bank has personal type account?",
-        "open personal account in bank?",
+        "how to open personal account in bank?",
         "Can i know about personal type accounts?",
-        "Tell me about personal type account?."
+        "Tell  about personal type account?",
+        "Personal type account examples?"
       ],
       "responses": [
-        "Yes you can open personal type account in our bank",
-        "Yes we provide personal account for our client, we     need simple document from you to open the account",
-        "Minor Accounts, Savings Accounts, Fixed Accounts, Current Accounts and Senior Citizen Accounts"
+        "We have following Accounts:\nSavings,\nCurrent,\nFixed,\nSenior Citizen,\nWhich one is more suitable to you?"
+      ]
+    },
+     {
+      "tag": "saving",
+      "patterns": [
+       "saving account",
+        "saving",
+        "How to open savings account?"
+      ],
+      "responses": [
+        "You are interseted in opening a savings account. \nPlease go to https://rbcbank.com/savings/info\n"
       ]
     },
     {
-      "tag": "buisness",
+      "tag": "business",
       "patterns": [
         "Do your bank has buisness account?",
         "How Can i open buisness account in your bank",
@@ -75,33 +103,37 @@
       ],
       "responses": [
         "Yes we have buisness account",
-        "Yes we provide buisness account for our client, we     need simple document from our client"
+        "General current Account\nSupreme Current Account\nPaymet Guaranteed Cheque Account\nWhich one is more suitable to you?\n"
       ]
     },
     {
       "tag": "contact",
       "patterns": [
         "contact customer care?",
-        "How to contact customer care?",
+        "customer care details?",
+        "contact details?",
         "contact bank customer care details?",
-        "contact customer care number?"
+        "contact customer care number?",
+        "contact no?"
       ],
       "responses": [
-        "Contact No :- 011-637 2982/011-879 617, Email id :- royal_bank@info.com , Head Office :- 112/3 St.Clair Road, Wellawatta.",
+        "Email id :- royal_bank@info.com , Head Office :- 112/3 St.Clair Road, Wellawatta. Contact No :- 011-637 2982/011-879 617,",
         "Contact No :- 011-637 2982/011-879 617"
       ]
     },
      {
-      "tag": "branches",
+      "tag": "branch",
       "patterns": [
-        "Can i know how many branches your bank have?",
-        "Where is your Head Branch Located?",
-        "Can i know your branches located areas?"
+        "how many branches your bank have?",
+        "how many branches your bank has?",
+        "Where is your branches located?",
+        "Where is your branch locations",
+        "Branch locations",
+        "branch located areas?"
       ],
       "responses": [
         "We have 10 Branches.",
-        "Our Head Branch is Located in wellawatta.",
-        "Wellawatta , Moratuwa,  Kalutara, Kandy, Dambulla, \n Trincomalee,  Jaffna, Buttala, Matara and Galle"
+        "Our Head Branch is Located in Wellawatta and other branches are listed as follows Moratuwa,  Kalutara, Kandy, Dambulla, \n Trincomalee,  Jaffna, Buttala, Matara and Galle"
       ]
     },
     {
@@ -109,7 +141,8 @@
       "patterns": [
         "Do your Bank Has E-Banking?",
         "Can i know about E-Banking?",
-         "Can you explain about E-Banking?"
+        "Can you explain about E-Banking?",
+        "E-Bank details?"
       ],
       "responses": [
         "Yes We have E-Banking System.",
@@ -117,10 +150,12 @@
       ]
     },
        {
-      "tag": "intrest",
+      "tag": "interest",
       "patterns": [
-        "Can i know the intrest rate your bank provide?",
-        "Can i know about intrest ratio in your bank?"
+        "interest",
+        "interest rates",
+        "Can i know the interest rate your bank provide?",
+        "Can i know about interest ratio in your bank?"
       ],
       "responses": [
         "we give 2.5 % intrest in our bank."
@@ -139,11 +174,34 @@
      {
       "tag": "credit card",
       "patterns": [
-         "Can i know about credit card?",
-       "Can you tell about credit card you provide?"
+        "Can i know about credit card?",
+        "Can you tell about credit card you provide?"
       ],
       "responses": [
         "Convenience, speed and security. These features have been the  \n benchmarks of Royal Bank Credit cards.for further details contact our hot line..."
+      ]
+    },
+     {
+      "tag": "thanks",
+      "patterns": [
+        "Thank You",
+         "Thanks",
+        "Great",
+        "Tks",
+        "Thanks a lot"
+      ],
+      "responses": [
+        "Happy to help, Anytime!"
+      ]
+    },
+     {
+      "tag": "game",
+      "patterns": [
+        "what is game?",
+        "tell about game"
+      ],
+      "responses": [
+        "aanbbh  sba kabad"
       ]
     }
   ]

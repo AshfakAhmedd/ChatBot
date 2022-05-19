@@ -28,7 +28,7 @@ model.eval()
 bot_name = "Bot"
 
 
-def get_response(msg):
+def bot_response(msg):
     sentence = tokenize(msg)
     x = bag_of_words(sentence, all_words)
     x = x.reshape(1, x.shape[0])
