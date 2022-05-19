@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Chatbot</title>
+</head>
+<body>
+<nav class="main-nav">
+
+        <a href="#" >Home</a>
+        <a href="#" >About</a>
+        <a href="#" >Contact</a>
+        <a href="#" >Blog</a>
+        <a href="#" >Careers</a>
+</nav>
+
+<div class="head"  id="header">
+ <img  class="nav-image" src="static/images/rbc.png" style="width:140px;height:110px;">
+
+</div>
+<div>
+    <img src="static/images/bank.jpg"  style="width:1349px;height:580px;">
+</div>
+<section class="why-us">
+        <h1>Why choose RoyalBank?</h1>
+        <p
+          >We leverage open banking to turn your bank account into your
+          financial hub.<br />Control your finances like never before.</p>
+      </section>
+      <section class="features-section">
+        <div class="feature-item">
+          <img src="static/images/icon-online.svg" alt="" />
+          <h1>Online Banking</h1>
+          <p
+            >Our modern web and mobile<br/>
+            applications allow you to keep<br/>
+            track of your finances wherever<br/>
+            you are in the world.</p>
+        </div>
+        <div class="feature-item">
+          <img src="static/images/icon-budgeting.svg" alt=""/>
+          <h1>Simple Budgeting</h1>
+          <p
+            >See exactly where your money<br/>
+            goes every month.Recieve<br/>
+            notifications when you're close to<br/>
+            hitting your limits.</p>
+          </div>
+
+        <div class="feature-item">
+          <img src="static/images/icon-onboarding.svg" alt="" />
+          <h1>Fast Onboarding</h1>
+          <p>We don't do branches.Open your<br/>
+            account minutes online and start<br/>
+            taking controll of your finances<br/>
+            right away.</p>
+        </div>
+        <div class="feature-item">
+          <img src="static/images/icon-api.svg" alt=""/>
+          <h1>Open API</h1>
+          <p>Manage your savings, investments,<br/>
+            pension and much more from one<br/>
+            account.Tracking your money has<br/>
+            never been easier.</p>
+        </div>
+      </section>
+<footer class="footer">
+        <div class="menu">
+          <a href="#">About us</a>
+          <a href="#">Contact us</a>
+          <a href="#">Blog</a>
+        </div>
+        <div class="menu">
+          <a href="#">Carriers</a>
+          <a href="#">Support</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+    </footer>
+<div class="container">
+    <div class="chatbox">
+        <div class="chatbox__support">
+            <div class="chatbox__header">
+                <div class="chatbox__image--header">
+                    <img src="static/images/girl.png" style="width:60px;height:60px;" alt="image">
+                </div>
+                <div class="chatbox__content--header">
+                    <h4 class="chatbox__heading--header">Chat support</h4>
+                    <p class="chatbox__description--header">I'm Kayla Virtual Assistant Of Royal Bank How Can I  Help You?</p>
+                </div>
+            </div>
+            <div class="chatbox__messages">
+                <div></div>
+            </div>
+            <div class="chatbox__footer">
+                <input type="text" placeholder="Write a message...">
+                <button class="chatbox__send--footer send__button">Send</button>
+            </div>
+        </div>
+        <div class="chatbox__button">
+            <button><img src="{{ url_for('static', filename='images/chatbox-icon.png') }}" /></button>
+        </div>
+    </div>
+</div>
+
+    <script>
+        $SCRIPT_ROOT = {{ request.script_root|tojson }};
+    </script>
+    <script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
+
+</body>
+</html>
