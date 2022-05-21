@@ -12,7 +12,7 @@
 
       ],
       "responses": [
-         "I'm Kayla Virtual Assistant Of Royal Bank How Can I  Help You?"
+         "How Can I  Help You?"
       ]
     },
     {
@@ -38,11 +38,10 @@
         "what type of loan your bank have?",
         "Can i know about loans?",
         "loan types"
-
       ],
       "responses": [
         "Yes we provides multy loan systems.",
-        "We provide\nPersonal loans\nHome loans\nEducational loans\nVehicle loans\nWhich one is more suitable to you?\n"
+        "We provide\nPersonal loans,\nHome loans,\nEducational loans,\nVehicle loans,\nWhich one is more suitable to you?\n"
       ]
     },
     {
@@ -52,26 +51,27 @@
         "What are those two type of accounts?",
         "How Can I open an account?",
         "How to open an account?",
-         "Online account"
+        "account"
       ],
       "responses": [
         "We have personal and business accounts. Which account type do you prefer?"
       ]
     },
        {
-      "tag": "educational",
+      "tag": "educational loan",
       "patterns": [
         "Do you have educational loans?",
         "Educational loans",
         "How Can I Get The Educational Loan?"
       ],
       "responses": [
-        "You are interseted in Educational loans.\nFor more information, please go to https://rbcbank.com/loans/educational loan\n"
+        "You are interested in Educational loans.\nFor more information, please go to https://rbcbank.com/loans/\n educational loan\n"
       ]
     },
     {
       "tag": "personal",
       "patterns": [
+        "Do your company have personal accounts?",
         "bank has personal type account?",
         "how to open personal account in bank?",
         "Can i know about personal type accounts?",
@@ -79,12 +79,56 @@
         "Personal type account examples?"
       ],
       "responses": [
-        "We have following Accounts:\nSavings,\nCurrent,\nFixed,\nSenior Citizen,\nWhich one is more suitable to you?"
+        "Yes we have personal account. \n you can choose the type \n of your account.  ",
+        "We have following Personal Accounts:\nSavings,\nCurrent,\nFixed,\nSenior Citizen,\nWhich one is more suitable to you?"
+      ]
+    },
+    {
+      "tag": "personal loan",
+      "patterns": [
+        "personal loan",
+        "bank has personal type loan?",
+        "how to apply personal loan in your bank?",
+        "Can i know about personal loan?",
+        "Tell  about personal loan?",
+        "personal loan examples?"
+      ],
+      "responses": [
+       "If You are interested in personal loans \n Please visit to https://rbcbank.com/loans/\n peronalloan\n"
+      ]
+    },
+    {
+      "tag": "home loan",
+      "patterns": [
+        "home loan",
+        "bank has home loan?",
+        "how to apply home loan in your bank?",
+        "Can i know about home loan?",
+        "Tell  about home loan?",
+        "home loan examples?"
+      ],
+      "responses": [
+       "If You are interested in home loan \n Please visit to https://rbcbank.com/loans/\n homeloan\n"
+      ]
+    },
+    {
+      "tag": "vehical loan",
+      "patterns": [
+        "vehical loans",
+        "bank has vehical loan?",
+        "how to apply vehical loan in your bank?",
+        "Can i know about vehical loan?",
+        "Tell  about vehical loan?",
+        "vehical loan examples?"
+      ],
+      "responses": [
+       "If You are interested in vehical loan \n Please visit to https://rbcbank.com/loans/ \n vehicalloan\n"
       ]
     },
      {
       "tag": "saving",
       "patterns": [
+        "can i know about saving account?",
        "saving account",
         "saving",
         "How to open savings account?"
@@ -93,17 +137,93 @@
         "You are interseted in opening a savings account. \nPlease go to https://rbcbank.com/savings/info\n"
       ]
     },
-    {
-      "tag": "business",
+      {
+      "tag": "current",
       "patterns": [
-        "Do your bank has buisness account?",
-        "How Can i open buisness account in your bank",
-        "What i need to open buisness type accounts?",
+        "can i know about current account?",
+       "current account",
+        "current",
+        "How to open current account?"
+      ],
+      "responses": [
+        "You are interested in opening a current account. \nPlease go to https://rbcbank.com/current/info\n"
+      ]
+    },
+    {
+      "tag": "fixed",
+      "patterns": [
+        "can i know about fixed account?",
+       "fixed account",
+        "fixed",
+        "How to open fixed account?"
+      ],
+      "responses": [
+        "You are interested in opening a fixed account. \nPlease go to https://rbcbank.com/fixed/info\n"
+      ]
+    },
+     {
+      "tag": "senior citizen",
+      "patterns": [
+        "can i know about senior citizen account?",
+       "senior citizen account",
+        "senior citizen",
+        "How to open senior citizen account?"
+      ],
+      "responses": [
+        "You are interested in opening a senior citizen account. \nPlease go to https://rbcbank.com/seniorcitizen/info\n"
+      ]
+    },
+    {
+      "tag": "business accounts",
+      "patterns": [
+        "business account",
+        "Do your bank has business account?",
+        "How Can i open business account in your bank?",
+        "What i need to open business type accounts?",
         "Tell me about personal type accounts."
       ],
       "responses": [
-        "Yes we have buisness account",
+        "Yes we have business account",
         "General current Account\nSupreme Current Account\nPaymet Guaranteed Cheque Account\nWhich one is more suitable to you?\n"
+      ]
+    },
+    {
+      "tag": "general current account",
+      "patterns": [
+        "general current account",
+        "Do your bank has general account?",
+        "How Can i open general account in your bank",
+        "What i need to open general account?",
+        "Tell me about general account."
+      ],
+      "responses": [
+        "You are interested in opening a general account. \nPlease go to https://rbcbank.com/generalaccount/info\n"
+      ]
+    },
+    {
+      "tag": "Supreme Current Account",
+      "patterns": [
+        "supreme current account",
+        "Do your bank has supreme current account?",
+        "How Can i open supreme current account in your bank",
+        "What i need to do for supreme current account?",
+        "Tell me about supreme current account."
+      ],
+      "responses": [
+        "You are interested in opening a supreme current account. \nPlease go to https://rbcbank.com/supremecurrentaccount/info\n"
+      ]
+    },
+     {
+      "tag": "Payment Guaranteed Cheque Account",
+      "patterns": [
+        "Payment Guaranteed Cheque Account",
+        "Do your bank has Payment Guaranteed Cheque Account?",
+        "How Can i open Payment Guaranteed Cheque Account in your bank",
+        "What i need to do for Payment Guaranteed Cheque Account?",
+        "Tell me about Payment Guaranteed Cheque Account"
+      ],
+      "responses": [
+        "You are interested in opening a Payment Guaranteed Cheque Account. \nPlease go to https://rbcbank.com/paymentguaranteedchequeaccount/info\n"
       ]
     },
     {
@@ -124,11 +244,13 @@
      {
       "tag": "branch",
       "patterns": [
+        "branches",
         "how many branches your bank have?",
         "how many branches your bank has?",
         "Where is your branches located?",
         "Where is your branch locations",
         "Branch locations",
+        "where are they located",
         "branch located areas?"
       ],
       "responses": [
@@ -164,6 +286,7 @@
     {
       "tag": "debit card",
       "patterns": [
+        "debit card",
         "Can i know about debit card?",
         "Can you tell about debit card you provide?"
       ],
@@ -192,16 +315,6 @@
       ],
       "responses": [
         "Happy to help, Anytime!"
-      ]
-    },
-     {
-      "tag": "game",
-      "patterns": [
-        "what is game?",
-        "tell about game"
-      ],
-      "responses": [
-        "aanbbh  sba kabad"
       ]
     }
   ]
