@@ -174,17 +174,17 @@
       ]
     },
     {
-      "tag": "business accounts",
+      "tag": "business account",
       "patterns": [
         "business account",
+        "Do your bank have business account?",
         "Do your bank has business account?",
-        "How Can i open business account in your bank?",
-        "What i need to open business type accounts?",
-        "Tell me about personal type accounts."
+        "Tell me about personal type accounts.",
+        "can i now about business  account types?"
       ],
       "responses": [
         "Yes we have business account",
-        "General current Account\nSupreme Current Account\nPaymet Guaranteed Cheque Account\nWhich one is more suitable to you?\n"
+        "General current Account,\nSupreme Current Account,\nPayment Guaranteed Cheque Account\nWhich one is more suitable to you?\n"
       ]
     },
     {
@@ -197,7 +197,7 @@
         "Tell me about general account."
       ],
       "responses": [
-        "You are interested in opening a general account. \nPlease go to https://rbcbank.com/generalaccount/info\n"
+        "You are interested in opening a general account. \nPlease go to https://rbcbank.com/genera\nlaccount/info\n"
       ]
     },
     {
@@ -210,7 +210,7 @@
         "Tell me about supreme current account."
       ],
       "responses": [
-        "You are interested in opening a supreme current account. \nPlease go to https://rbcbank.com/supremecurrentaccount/info\n"
+        "You are interested in opening a supreme current account. \nPlease go to https://rbcbank.com/suprem\necurrentaccount/info\n"
       ]
     },
      {
@@ -223,18 +223,16 @@
         "Tell me about Payment Guaranteed Cheque Account"
       ],
       "responses": [
-        "You are interested in opening a Payment Guaranteed Cheque Account. \nPlease go to https://rbcbank.com/paymentguaranteedchequeaccount/info\n"
+        "You are interested in opening a Payment Guaranteed Cheque Account. \nPlease go to https://rbcbank.com/paym\nentguaranteedchequeacco\nunt/info\n"
       ]
     },
     {
-      "tag": "contact",
+      "tag": "customer care",
       "patterns": [
-        "contact customer care?",
-        "customer care details?",
-        "contact details?",
-        "contact bank customer care details?",
-        "contact customer care number?",
-        "contact no?"
+        "customer care details",
+        "how can i get customer care details?",
+        "can i get customer care number?",
+        "customer care no"
       ],
       "responses": [
         "Email id :- royal_bank@info.com , Head Office :- 112/3 St.Clair Road, Wellawatta. Contact No :- 011-637 2982/011-879 617,",
@@ -261,6 +259,7 @@
     {
       "tag": "E-Banking ",
       "patterns": [
+        "Do your bank have e banking system?",
         "Do your Bank Has E-Banking?",
         "Can i know about E-Banking?",
         "Can you explain about E-Banking?",
